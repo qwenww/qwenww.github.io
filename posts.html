@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Posts | Qing Wen</title>
+  <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
+  <script defer src="/assets/libs/fontawesome/all.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+  <body>
+    <div class="col-lg-8 mx-auto p-3 py-md-5">
+      <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
+  <div>
+    <a href="/" class="d-flex align-items-center text-decoration-none">
+      <span class="fs-4 fw-bold">Qing Wen</span>
+    </a>
+    <a href="/" class="d-flex align-items-center text-decoration-none">
+      <span></span>
+    </a>
+  </div>
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+    
+      <a class="me-3 py-2 text-decoration-none" href="/">home</a>
+    
+      <a class="me-3 py-2 text-decoration-none" href="/publications">publications</a>
+    
+      <a class="me-3 py-2 text-decoration-none" href="/posts">posts</a>
+    
+      <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
+    
+      <a class="me-3 py-2 text-decoration-none" href="/contact">contact</a>
+    
+  </nav>
+</header>
+
+      <div class="row g-5 mb-5">
+    <div class="col-md-12">
+      <h3 class="fw-bold border-bottom pb-3 mb-5">Posts</h3>
+      <p><i>~I am curious about prescribing data... </i> </p>
+      
+      <p> <b>A First- Glance at NHS GP Prescribing of Sleep Medications: Z drugs and Benzodiazepines (2020–2025) Using OpenPrescribing</b></p>
+      <p> I have worked on a range of data-driven projects for some time, OpenPrescribing was entirely new to me.  Curious about who it was built for, how it works, and whether I could find something interesting or inspiring,  I decided to dive in and give it a try. From time to time, I explored OpenPrescribing, mostly to become familiar with its features. I found it to be an excellent example of how simplicity and power can coexist in a well-designed tool, and I was impressed by its clean, intuitive interface and surprisingly strong analytical capabilities.</p>
+      <p>I took a closer look recently at OpenPrescribing after coming across a topic that caught my attention - sleep medications. Although sleeping pills are prescribed to aim sleep and support health, research suggests that deprescribing unnecessary sleep drugs can improve well-being and benefit in older adults 1, as these medications are linked to cognitive decline and increased injury risk 2,3 . Interested in prescribing patterns and potential regional differences, I looked into GP prescriptions for Z-drugs (trazodone, eszopiclone, zopiclone) and benzodiazepines* in England between September 2020 and August 2025, using the OpenPrescribing platform.</p>
+      <p>In OpenPrescribing, click “Start analysing”. In the “Analyse” interface, enter the drug names and select lists containing all available formulations (tablets, capsules, liquids, and suspensions) across all doses. Then choose “versus – total list size,” highlight “NHS England Region,” and click “Show me the data”, to generate the figures and download the CSV data.  After completing these steps, I have Figure 1 (line chart) showing the prescribing trend for Z-drugs and Benzodiazepines per 1,000 patients by region (2020-2025). Figure 2 (map) and Figure 3 (bar chart) provide snapshots of prescribing rates across regions in September 2020 (start) and August 2025 (end). </p>
+      <p>Some preliminary visual findings based on my observations:</p>
+      <p> <b>Gradual decline:</b> Prescribing rates declined gradually from 2020 to 2025 across all regions, showing smooth, consistent trends without major fluctuations.</p> 
+      <p><b> Bimodal seasonal:</b> A consistent bimodal seasonal pattern emerges across all regions (2020-2025): an initial December peak, followed by a January drop, then a subsequent rise to a higher peak in March.</p> 
+      <p> <b>Regional differences:</b>  The South West has the highest prescribing rate (about 21 per 1,000), while London has the lowest (around 10).</p>
+      <p>These visual findings also prompt several questions regarding prescribing patterns:</p>
+      <p>1. What factors are driving the overall decline in prescriptions across England? Are policy changes, clinical guidelines, or public awareness campaigns contributing to this decline? </p>
+      <p>2. What explains the recurring seasonal peaks in December and March, across all regions? Are these seasonal trends driven more by healthcare system practices or actual fluctuations in patient demand?</p>
+      <p>3. Why do prescribing rates vary regionally, with the South West highest and London lowest? The South West is generally more rural than London. Although urban areas like London often involve demanding lifestyles, including commuting, noise, fast-paced living, stress alone may not necessarily lead to higher prescribing rates. So how and to what extent do regional demographics, healthcare access or socioeconomic factors contribute to these differences?</p>
+      <p>It’s important to note that the current observation compared prescriptions against the total list size across regions, focusing specifically on the regional level. Other options for stratified comparison include practices, Sub-ICB Locations, PCNs, ICBs, as well as different parameters such as specific drugs or BNF sections.</p>
+      <p>I also explored “Trend for BNF sections”, in chapter 4 Central Nervous System, under 4.1: Hypnotics and anxiolytics, examining prescribing items and spending across all practice in England. For example, for individual medications <b>Temazepam</b>, I noticed something eye-catching. The trends for spending and prescribed items show a clear divergence between September 2020 and September 2022. While the volume of prescriptions (items) remained relatively high and stable, total spending on the drug declined sharply (Figure 4). From 2023 onward, spending increases substantially even as the number of items prescribed falls, indicating a significant change in the prescribing dynamic. It would be interesting to understand the reasons or story behind this. </p>
+      <p>Like a child wandering along the beach in search of hidden treasure, I embarked on my first truly exploratory journey through the prescribing data without any expectations and was rewarded with the thrill of discovery, uncovering intriguing findings and questions for further investigation, whether to inspire future research or to shed light on the underlying causes. It was such a fun and engaging exploration. <b>Thanks to OpenPrescribing for building an open, rapid and highly valuable gateway to insights into prescribing practices, enabling the identification of trends, variation, regional differences, and potential areas for intervention.</b></p>
+      <video src=""></video>
+  </div>
+        <div class="col-md-6">
+        <img src="/assets/img/Z_Benzo_drugs_rmv2_time_series.png" alt="Figure1" width="100%">
+        <p>Figure1: Items for Z-drugs + Benzodiazepines vs patients on list by region: Five-year time series from September 2020 to a projected August 2025.</p>
+      </div>
+        <div class="col-md-6">
+        <img src="/assets/img/Z_Benzo_drugs_rmv2_map_2020_2025.png" alt="Figure2" width="100%">
+        <p>Figure 2: Prescribing rates for Z-drugs and benzodiazepines across regions in September 2020 and August 2025 (map)</p>
+      </div>
+        <div class="col-md-6">
+        <img src="/assets/img/Z_Benzo_drugs_rmv2_region_2020_2025.png" alt="Figure3" width="100%">
+        <p>Figure 3: Prescribing rates for Z-drugs and benzodiazepines across regions in September 2020 and August 2025 </p>
+      </div>
+       <div class="col-md-6">
+        <img src="/assets/img/Zopiclone_spending_items.png" alt="Figure4" width="100%">
+        <p>Figure 4: Trends in prescribing items and spending for Temazepam across all practices in England (2020-2025) </p>
+      </div>
+  </div>
+  
+      <footer class="pt-5 my-5 text-muted border-top">
+  <div class="row">
+    <div class="col-md-6 text-end social-media-icons">
+      
+        <a href="https://github.com/qwenww" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
+      
+        <a href="https://twitter.com/QQwenww" class="ms-3 fs-5"><i class="fab fa-twitter"></i></a>
+      
+        <a href="https://uk.linkedin.com/in/qing-wen-ba26a7120" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
+      
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>
