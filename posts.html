@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
+<head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>Posts | Qing Wen</title>
@@ -11,53 +11,71 @@
   <link rel="shortcut icon" href="/assets/favicon.ico">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    .small-text {
+      font-size: 0.80rem; 
+      color: #555; 
+    }
+    img.responsive-img {
+      max-width: 100%;
+      height: auto;
+      cursor: zoom-in;
+      transition: 0.3s;
+    }
+    img.responsive-img:hover {
+      opacity: 0.8;
+    }
+    /* Modal styles */
+    #imgModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+    #imgModal img {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+      margin-top: 5%;
+    }
+    #closeModal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
-  <body>
-    <div class="col-lg-8 mx-auto p-3 py-md-5">
-      <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
-  <div>
-    <a href="/" class="d-flex align-items-center text-decoration-none">
-      <span class="fs-4 fw-bold">Qing Wen</span>
-    </a>
-    <a href="/" class="d-flex align-items-center text-decoration-none">
-      <span></span>
-    </a>
-  </div>
-  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-    
-      <a class="me-3 py-2 text-decoration-none" href="/">home</a>
-    
-      <a class="me-3 py-2 text-decoration-none" href="/publications">publications</a>
-    
-      <a class="me-3 py-2 text-decoration-none" href="/posts">posts</a>
-    
-      <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
-    
-      <a class="me-3 py-2 text-decoration-none" href="/contact">contact</a>
-    
-  </nav>
-</header>
+<body>
+  <div class="col-lg-8 mx-auto p-3 py-md-5">
+    <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
+      <div>
+        <a href="/" class="d-flex align-items-center text-decoration-none">
+          <span class="fs-4 fw-bold">Qing Wen</span>
+        </a>
+      </div>
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-decoration-none" href="/">home</a>
+        <a class="me-3 py-2 text-decoration-none" href="/publications">publications</a>
+        <a class="me-3 py-2 text-decoration-none" href="/posts">posts</a>
+        <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
+        <a class="me-3 py-2 text-decoration-none" href="/contact">contact</a>
+      </nav>
+    </header>
 
-<style>
-  .small-text {
-    font-size: 0.80rem; 
-    color: #555; 
-  
-  }
-  
-  img.responsive-img {
-    max-width: 100%;
-    height: auto;
-    cursor: zoom-in;
-  }
-</style>
-
-<div class="row g-5 mb-5">
-    <div class="col-md-12">
-     
+    <div class="row g-5 mb-5">
+      <div class="col-md-12">
       <p><i>~I am curious about prescribing data... </i> </p>
-      
       <p> <b>A First- Glance at NHS GP Prescribing of Sleep Medications: Z drugs and Benzodiazepines (2020–2025) Using OpenPrescribing</b></p>
       <p> I have worked on a range of data-driven projects for some time, OpenPrescribing was entirely new to me.  Curious about who it was built for, how it works, and whether I could find something interesting or inspiring,  I decided to dive in and give it a try. From time to time, I explored OpenPrescribing, mostly to become familiar with its features. I found it to be an excellent example of how simplicity and power can coexist in a well-designed tool, and I was impressed by its clean, intuitive interface and surprisingly strong analytical capabilities.</p>
       <p>I took a closer look recently at OpenPrescribing after coming across a topic that drew my interest - sleep medications. Although sleeping pills are prescribed to aim sleep and support health, research suggests that deprescribing unnecessary sleep drugs can improve well-being and benefit in older adults [1], as these medications are linked to cognitive decline and increased injury risk [2-5] . Interested in prescribing patterns and potential regional differences, I looked into GP prescriptions for Z-drugs (Zopiclone/Zimovane, Eszopicione, Zolpidem) and Benzodiazepines in England between September 2020 and August 2025, using the OpenPrescribing platform.</p>
@@ -79,41 +97,66 @@
       <p class="small-text"> 2. Ensrud KE. Central Nervous System Active Medications and Risk for Fractures in Older Women. Arch Intern Med. 2003;163(8):949. doi:10.1001/archinte.163.8.949 </p>
       <p class="small-text"> 3. Billioti De Gage S, Moride Y, Ducruet T, et al. Benzodiazepine use and risk of Alzheimer’s disease: case-control study. BMJ. 2014;349(sep09 2):g5205-g5205. doi:10.1136/bmj.g5205 </p>
       <p class="small-text"> 4. Wu JQ, Appleman ER, Salazar RD, Ong JC. Cognitive Behavioral Therapy for Insomnia Comorbid With Psychiatric and Medical Conditions: A Meta-analysis. JAMA Intern Med. 2015;175(9):1461. doi:10.1001/jamainternmed.2015.3006 </p>
-      <p class="small-text mb-1">5. Patel D, Steinberg J, Patel P. Insomnia in the Elderly: A Review. J Clin Sleep Med.2018;14(06):1017-1024.doi:10.5664/jcsm.71723 </p>
-</div>
-        <div class="col-md-6">
+      <p class="small-text mb-0">5. Patel D, Steinberg J, Patel P. Insomnia in the Elderly: A Review. J Clin Sleep Med.2018;14(06):1017-1024.doi:10.5664/jcsm.71723 </p>
+      </div>
+
+      <div class="col-md-6">
         <p class="mt-0"> <b>Figures</b></p>
-        <img src="/assets/img/Z_Benzo_drugs_rmv2_time_series.png" alt="Figure1" width="100%" class="responsive-img">
+        <img src="/assets/img/Z_Benzo_drugs_rmv2_time_series.png" alt="Figure1" class="responsive-img">
         <p class="small-text">Figure 1: Prescribing items for Z-drugs and Benzodiazepines vs patients on list by region: five-year time series from September 2020 to projected August 2025 </p>
       </div>
-        <div class="col-md-6">
-        <img src="/assets/img/Z_Benzo_drugs_rmv2_map_2020_2025.png" alt="Figure2" width="100%" class="responsive-img" >
+      <div class="col-md-6">
+        <img src="/assets/img/Z_Benzo_drugs_rmv2_map_2020_2025.png" alt="Figure2" class="responsive-img">
         <p class="small-text">Figure 2: Prescribing rates for Z-drugs and benzodiazepines across regions in September 2020 and August 2025 </p>
       </div>
-        <div class="col-md-6">
-        <img src="/assets/img/Z_Benzo_drugs_rmv2_region_2020_2025.png" alt="Figure3" width="100%" class="responsive-img">
+      <div class="col-md-6">
+        <img src="/assets/img/Z_Benzo_drugs_rmv2_region_2020_2025.png" alt="Figure3" class="responsive-img">
         <p class="small-text">Figure 3: Prescribing rates for Z-drugs and benzodiazepines across regions in September 2020 and August 2025 </p>
       </div>
-       <div class="col-md-6">
-        <img src="/assets/img/temazepam_spending_items.png" alt="Figure4" width="100%" class="responsive-img">
+      <div class="col-md-6">
+        <img src="/assets/img/temazepam_spending_items.png" alt="Figure4" class="responsive-img">
         <p class="small-text">Figure 4: Trends in prescribing items and spending for Temazepam across all practices in England (2020-2025) </p>
       </div>
-  </div>
-  
-      <footer class="pt-5 my-5 text-muted border-top">
-  <div class="row">
-    <div class="col-md-6 text-end social-media-icons">
-      
-        <a href="https://github.com/qwenww" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
-      
-        <a href="https://twitter.com/QQwenww" class="ms-3 fs-5"><i class="fab fa-twitter"></i></a>
-      
-        <a href="https://uk.linkedin.com/in/qing-wen-ba26a7120" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
-      
     </div>
-  </div>
-</footer>
 
+    <!-- Modal -->
+    <div id="imgModal">
+      <span id="closeModal">&times;</span>
+      <img id="modalImg">
     </div>
-  </body>
+
+    <footer class="pt-5 my-5 text-muted border-top">
+      <div class="row">
+        <div class="col-md-6 text-end social-media-icons">
+          <a href="https://github.com/qwenww" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/QQwenww" class="ms-3 fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="https://uk.linkedin.com/in/qing-wen-ba26a7120" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll('img.responsive-img').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>
 </html>
