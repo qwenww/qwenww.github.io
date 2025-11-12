@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Posts | Qing Wen</title>
+  <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
+  <script defer src="/assets/libs/fontawesome/all.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    .small-text {
+      font-size: 0.80rem; 
+      color: #555; 
+    }
+    img.responsive-img {
+      max-width: 100%;
+      height: auto;
+      cursor: zoom-in;
+      transition: 0.3s;
+    }
+    img.responsive-img:hover {
+      opacity: 0.8;
+    }
+    /* Modal styles */
+    #imgModal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.9);
+    }
+    #imgModal img {
+      margin: auto;
+      display: block;
+      max-width: 90%;
+      max-height: 90%;
+      margin-top: 5%;
+    }
+    #closeModal {
+      position: absolute;
+      top: 20px;
+      right: 35px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="col-lg-8 mx-auto p-3 py-md-5">
+    <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
+      <div>
+        <a href="/" class="d-flex align-items-center text-decoration-none">
+          <span class="fs-4 fw-bold">Qing Wen</span>
+        </a>
+      </div>
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+        <a class="me-3 py-2 text-decoration-none" href="/">home</a>
+        <a class="me-3 py-2 text-decoration-none" href="/publications">publications</a>
+        <a class="me-3 py-2 text-decoration-none" href="/posts">posts</a>
+        <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
+        <a class="me-3 py-2 text-decoration-none" href="/contact">contact</a>
+      </nav>
+    </header>
+
+    <div class="row g-5 mb-5">
+      <div class="col-md-12">
+      <p><i>~I am curious about prescribing data. </i> </p>
+      <p> <b> NHS GP Prescribing of Sleep Medications: Z drugs and Benzodiazepines (2020–2025) Using OpenPrescribing (Continued)</b></p>
+      <p class="small-text" style="text-align:justify;"> (November 2025)</p>
+      <p> <a href="https://openprescribing.net/"> OpenPrescribing </a> </p>
+      
+    </div>
+
+      <div class="col-md-6">
+        <p class="mt-0"> <b>Figures</b></p>
+        <img src="/assets/img/Temazepam_items_quantity_actual cost_all.png" alt="Figure" class="responsive-img">
+        <p class="small-text">Figure : Trends in prescribing items, quantity and spending for Temazepam across all practices in England </p>
+      </div>
+     
+        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <p> <b><a class="me-3 py-2 text-decoration-none" href="/posts"> Previous Post </a> </b></p>  </nav>
+
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="imgModal">
+      <span id="closeModal">&times;</span>
+      <img id="modalImg">
+    </div>
+
+    <footer class="pt-5 my-5 text-muted border-top">
+      <div class="row">
+        <div class="col-md-6 text-end social-media-icons">
+          <a href="https://github.com/qwenww" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/QQwenww" class="ms-3 fs-5"><i class="fab fa-twitter"></i></a>
+          <a href="https://uk.linkedin.com/in/qing-wen-ba26a7120" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const modal = document.getElementById("imgModal");
+    const modalImg = document.getElementById("modalImg");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll('img.responsive-img').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+
+    closeModal.addEventListener('click', () => {
+      modal.style.display = "none";
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
