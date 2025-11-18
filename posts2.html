@@ -53,6 +53,12 @@
       font-weight: bold;
       cursor: pointer;
     }
+    .data-table th, .data-table td {
+  border: 1px solid #000;
+  font-size: 0.85em;
+  text-align: center;
+  padding: 4px;
+}
   </style>
 </head>
 
@@ -76,65 +82,71 @@
     <div class="row g-5 mb-5">
       <div class="col-md-12">
     
-      <p> <b> NHS GP Prescribing of Sleep Medications: Z drugs and Benzodiazepines (2020–2025) Using OpenPrescribing (Continued)</b></p>
-      <p class="small-text" style="text-align:justify;"> (November 2025)</p>
-      <p></p>
+        <p> <b> NHS GP Prescribing of Sleep Medications: Z drugs and Benzodiazepines (2020–2025) Using OpenPrescribing (Continued)</b></p>
+        <p class="small-text" style="text-align:justify;"> (November 2025)</p>
+        <p></p>
 
-      <p> <a href="https://openprescribing.net/"> OpenPrescribing </a> </p>
-      <p>Further examination of the downloaded prescribing data for Temazepam is presented below (Table, Figure 1):
-      Between September 2020 and May 2022, prescription items (mean: 60k, SD: 4.1k), quantity (1,571k, SD:119k), and spending (£145k, SD:20k) across England showed a gradual decline. Beginning in June 2022, items and quantity dropped sharply, reaching their lowest levels in December 2022 (items:16k; quantity:463k). 
-       They then increased and remained relatively stable until August 2025, with average values of 27k items and 721k quantity for the period January 2023 to August 2025.
-       Spending, however, followed a different pattern. Starting in June 2022, it rose dramatically to a peak of £1,112k in September, before declining through December. It then fluctuated briefly before stabilising from March 2023 until August 2025.
-       The period from June 2022 to February 2023 is particularly notable: while prescribing items and quantity fell sharply, spending increased significantly (costs more than tripled) - an interesting divergence in trends.</p>
-      <p>In sensitivity analyses restricted to Z-drugs, the South West consistently exhibited the highest prescribing rate, whereas London continued to have the lowest across the period 2020–2025 (Figure 2).</p>
+        <p> <a href="https://openprescribing.net/"> OpenPrescribing </a> </p>
+        <p>Further examination of the downloaded prescribing data for Temazepam is presented below (Table, Figure 1):
+        Between September 2020 and May 2022, prescription items (mean: 60k, SD: 4.1k), quantity (1,571k, 119k), and spending (£145k, 20k) across England showed a gradual decline. Beginning in June 2022, items and quantity dropped sharply, reaching their lowest levels in December 2022 (items:16k; quantity:463k). 
+        They then increased and remained relatively stable until August 2025, with average values of 27k items and 721k quantity for the period January 2023 to August 2025.
+        Spending, however, followed a different pattern. Starting in June 2022, it rose dramatically to a peak of £1,112k in September, before declining through December. It then fluctuated briefly before stabilising from March 2023 until August 2025.
+        The period from June 2022 to February 2023 is particularly notable: while prescribing items and quantity fell sharply, spending increased significantly (costs more than tripled) - an interesting divergence in trends.</p>
+        <p>In sensitivity analyses restricted to Z-drugs, the South West consistently exhibited the highest prescribing rate, whereas London continued to have the lowest across the period 2020–2025 (Figure 2).</p>
+
+        <div> 
+          <table class="data-table">
+            <caption>Table: Summary of Temazepam Prescribing Data Across England (2020 - 2025) </caption>
+            <thead>
+              <tr>
+               <th style="vertical-align: middle; white-space: nowrap; width: 200px; height: 32px; border: 1px solid #000;">
+                  <div style="display: flex; justify-content: center; align-items: center; gap: 6px; font-size: 0.9em;">
+                  <span>Period</span>
+                   <span style="color: #999;">|</span>
+                   <span>Mean (SD) </span>
+                 </div>
+               </th>
+                 <th scope="col" >Items</th>
+                 <th scope="col" >Quantity</th>
+                 <th scope="col" >Cost (£)</th>
+            
+              </tr>
+            </thead>
+
+            <tr>
+              <td scope="col">Sept 2020 - May 2022</td>
+              <td scope="col">60,000 (4,100)</td>
+              <td scope="col">1571,000 (119,000)</td>
+              <td scope="col">145,000 (20,000)</td>
+            </tr>
+            <tr>
+              <td scope="col">Jun 2022 - Feb 2023</td>
+              <td scope="col">37,000 (14,000)</td>
+              <td scope="col">980,000 (351,000)</td>
+              <td scope="col">678,000 (260,000)</td>
+            </tr>
+            <tr>
+              <td scope="col" >Mar 2023 - Aug 2025</td>
+              <td scope="col" >27,000 (1,400)</td>
+              <td scope="col" >721,000 (47,600)</td>
+              <td scope="col" >601,000 (31,200)</td>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
-   
-      <div class="table-caption">Table: Summary of Temazepam Prescribing Data Across England (2020 - 2025) 
-        <table border="1" style="border-collapse: collapse; width: auto; text-align: center; font-family: Arial, sans-serif;">
-         <tr>
-         <th style="vertical-align: middle; white-space: nowrap; width: 200px; height: 32px; border: 1px solid #000;">
-            <div style="display: flex; justify-content: center; align-items: center; gap: 6px; font-size: 0.9em;">
-                <span>Period</span>
-                <span style="color: #999;">|</span>
-                <span>Mean (SD) </span>
-            </div>
-         </th>
-          <th style="vertical-align: middle; width: 150px; font-size: 0.9em; height: 32px; border: 1px solid #000;">Items</th>
-          <th style="vertical-align: middle; width: 170px; font-size: 0.9em; height: 32px; border: 1px solid #000;">Quantity</th>
-          <th style="vertical-align: middle; width: 160px; font-size: 0.9em; height: 32px; border: 1px solid #000;">Cost (£)</th>
-          </tr>
-          <tr>
-            <td style="vertical-align: middle; font-size: 0.85em; height: 30px; border: 1px solid #000;">Sept 2020 - May 2022</td>
-            <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">60,000 (4,100)</td>
-            <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">1571,000 (119,000)</td>
-            <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">145,000 (20,000)</td>
-          </tr>
-        <tr>
-          <td style="vertical-align: middle; font-size: 0.85em; height: 30px; border: 1px solid #000;">Jun 2022 - Feb 2023</td>
-          <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">37,000 (14,000)</td>
-          <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">980,000 (351,000)</td>
-          <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">678,000 (260,000)</td>
-        </tr>
-    <tr>
-        <td style="vertical-align: middle; font-size: 0.85em; height: 30px; border: 1px solid #000;">Mar 2023 - Aug 2025</td>
-        <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">27,000 (1,400)</td>
-        <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">721,000 (47,600)</td>
-        <td style="vertical-align: middle; font-size: 0.85em; border: 1px solid #000;">601,000 (31,200)</td>
-    </tr>
-  </table>
-  </div>
-
-    
-    <div class="col-md-6">
+     
+    <div class="row">
+      <div class="col-md-6">
         <p class="mt-0"> <b>Figures</b></p>
         <img src="/assets/img/Temazepam_items_quantity_actual cost_all.png" alt="Figure1" class="responsive-img">
         <p class="small-text">Figure 1 : Trends in prescribing items, quantity and spending for Temazepam across all practices in England (2020 - 2025) </p>
     </div> 
       
-    <div class="col-md-6"> 
+     <div class="col-md-6"> 
         <img src="/assets/img/Z_drugs_time_series.png" alt="Figure2" class="responsive-img">
         <p class="small-text">Figure 2 : Prescribing rates for Z-drugs across regions in England (2020 - 2025) </p>
+      </div>
     </div>
 
       <!-- <div class="col-md-6">
@@ -144,17 +156,15 @@
 
     <div class="col-md-6">
         <p class="mt-0"> <b>Share analysis</b></p>
-        <p class="small-text"> <a style="text-decoration: none;" href="https://openprescribing.net/analyse/#org=regional_team&numIds=0401010R0,0401010R0AA,0401010R0AAAUAU,0401010R0AAAAAA,0401010R0AAAQAQ,0401010R0AAAVAV,0401010R0AAATAT,0401010R0AAAXAX,0401010R0AAACAC,0401010R0AAANAN,0401010T0AAANAN,0401010T0AAAMAM,0401010T0AAAEAE,0401010T0AA,0401010T0,0401010R0BD,0401010R0BDAAAC,0401020P0BC,0401020P0BCAAAA,0401020P0AACACA,0401020P0AACDCD,0401020P0AACECE,0401020P0AACICI,0401020P0AACKCK,0401020P0AAABAB,0401020P0AABHBH,0401020P0AACMCM,0401020P0AACLCL,0401020P0AAACAC,0401020P0AACHCH,0401020P0AACJCJ,0401020P0AABRBR,0401020P0AAAAAA,0401020P0AABXBX,0401020P0AACFCF,0401020P0AACGCG,0401020P0AAADAD,0401020P0AABJBJ,0401020K0,0401020K0BL,0401020K0AA,0401020K0AAAEAE,0401020K0AAAQAQ,0401020K0AAACAC,0401020K0AAA1A1,0401020K0AACKCK,0401020K0BLABAE,0401020K0AABBBB,0401020K0AAAJAJ,0401020K0AABKBK,0401020K0AABQBQ,0401020K0AABMBM,0401020K0AACBCB,0401020K0AACLCL,0401020K0BLACBQ,0401020K0AAA6A6,0401020K0AAAWAW,0401020K0AACICI,0401020K0AACMCM,0401020K0AAAHAH,0401020K0AAADAD,0401020K0AABWBW,0401020K0AACJCJ,0401020K0BLAAAD,0401020K0AAAIAI,15.1.4.1,0401010Z0,0401010Z0AA,0401010Z0AAAJAJ,0401010Z0AAAKAK,0401010Z0AAACAC,0401010Z0AAABAB,0401010Z0AAAMAM,0401010Z0AAALAL,0401010Z0AAAAAA,0401010AE,0401010AEAA,0401010AEAAAAAA,0401010AEAAABAB,0401010AEAAACAC,0401010Y0,0401010Y0AA,0401010Y0AAAEAE,0401010Y0AAABAB,0401010Y0AAACAC,0401010Y0AAADAD,0401010Y0AAAAAA,0401010Z0BBAAAA,0401010Z0BBABAC&denom=total_list_size&selectedTab=chart/"> Z-drugs+Benzodiazepines &nbsp; &nbsp;</a> 
-         <a style="text-decoration: none;" href="https://openprescribing.net/analyse/#org=regional_team&numIds=0401010AE,0401010Z0,0401010AEAA,0401010Z0AA,0401010AEAAAAAA,0401010AEAAABAB,0401010AEAAACAC,0401010Z0AAAJAJ,0401010Z0AAACAC,0401010Z0AAABAB,0401010Z0AAAKAK,0401010Z0AAAMAM,0401010Z0AAALAL,0401010Z0AAAAAA,0401010Z0BBAAAA,0401010Z0BBABAC,0401010Y0,0401010Y0AA,0401010Y0AAAEAE,0401010Y0AAABAB,0401010Y0AAACAC,0401010Y0AAADAD,0401010Y0AAAAAA&denom=total_list_size&selectedTab=map"> Z-drugs &nbsp; &nbsp;&nbsp; </a> 
+        <p class="small-text"> <a style="text-decoration: none;" href="https://openprescribing.net/analyse/#org=regional_team&numIds=0401010R0,0401010R0AA,0401010R0AAAUAU,0401010R0AAAAAA,0401010R0AAAQAQ,0401010R0AAAVAV,0401010R0AAATAT,0401010R0AAAXAX,0401010R0AAACAC,0401010R0AAANAN,0401010T0AAANAN,0401010T0AAAMAM,0401010T0AAAEAE,0401010T0AA,0401010T0,0401010R0BD,0401010R0BDAAAC,0401020P0BC,0401020P0BCAAAA,0401020P0AACACA,0401020P0AACDCD,0401020P0AACECE,0401020P0AACICI,0401020P0AACKCK,0401020P0AAABAB,0401020P0AABHBH,0401020P0AACMCM,0401020P0AACLCL,0401020P0AAACAC,0401020P0AACHCH,0401020P0AACJCJ,0401020P0AABRBR,0401020P0AAAAAA,0401020P0AABXBX,0401020P0AACFCF,0401020P0AACGCG,0401020P0AAADAD,0401020P0AABJBJ,0401020K0,0401020K0BL,0401020K0AA,0401020K0AAAEAE,0401020K0AAAQAQ,0401020K0AAACAC,0401020K0AAA1A1,0401020K0AACKCK,0401020K0BLABAE,0401020K0AABBBB,0401020K0AAAJAJ,0401020K0AABKBK,0401020K0AABQBQ,0401020K0AABMBM,0401020K0AACBCB,0401020K0AACLCL,0401020K0BLACBQ,0401020K0AAA6A6,0401020K0AAAWAW,0401020K0AACICI,0401020K0AACMCM,0401020K0AAAHAH,0401020K0AAADAD,0401020K0AABWBW,0401020K0AACJCJ,0401020K0BLAAAD,0401020K0AAAIAI,15.1.4.1,0401010Z0,0401010Z0AA,0401010Z0AAAJAJ,0401010Z0AAAKAK,0401010Z0AAACAC,0401010Z0AAABAB,0401010Z0AAAMAM,0401010Z0AAALAL,0401010Z0AAAAAA,0401010AE,0401010AEAA,0401010AEAAAAAA,0401010AEAAABAB,0401010AEAAACAC,0401010Y0,0401010Y0AA,0401010Y0AAAEAE,0401010Y0AAABAB,0401010Y0AAACAC,0401010Y0AAADAD,0401010Y0AAAAAA,0401010Z0BBAAAA,0401010Z0BBABAC&denom=total_list_size&selectedTab=chart/"> Z-drugs+Benzodiazepines</a> &nbsp; &nbsp;
+         <a style="text-decoration: none;" href="https://openprescribing.net/analyse/#org=regional_team&numIds=0401010AE,0401010Z0,0401010AEAA,0401010Z0AA,0401010AEAAAAAA,0401010AEAAABAB,0401010AEAAACAC,0401010Z0AAAJAJ,0401010Z0AAACAC,0401010Z0AAABAB,0401010Z0AAAKAK,0401010Z0AAAMAM,0401010Z0AAALAL,0401010Z0AAAAAA,0401010Z0BBAAAA,0401010Z0BBABAC,0401010Y0,0401010Y0AA,0401010Y0AAAEAE,0401010Y0AAABAB,0401010Y0AAACAC,0401010Y0AAADAD,0401010Y0AAAAAA&denom=total_list_size&selectedTab=map"> Z-drugs </a> &nbsp; &nbsp;&nbsp;
          <a style="text-decoration: none;" href="https://openprescribing.net/chemical/0401010T0/"> Temazepam </a> </p>
       </div>
   <p>  </p>
-  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <p><u><a class="me-3 py-2 text-decoration-none" href="/posts"> Previous Post </a> </u></p>  </nav>
-
- </div>
   
-  
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a class="me-3 py-2 text-decoration-none" href="/posts"> Previous Post </a> </nav>
 
+ 
     <!-- Modal -->
     <div id="imgModal">
       <span id="closeModal">&times;</span>
@@ -170,7 +180,8 @@
         </div>
       </div>
     </footer>
-  </div>
+    
+</div>
 
   <script>
     const modal = document.getElementById("imgModal");
@@ -195,5 +206,6 @@
     });
     
   </script>
+
 </body>
 </html>
