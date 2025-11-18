@@ -53,6 +53,56 @@
       font-weight: bold;
       cursor: pointer;
     }
+  
+        /* .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .data-table th {
+            background-color: #f2f2f2;
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+        
+        .data-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+        }
+        
+        .data-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .data-table tr:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .period-column {
+            font-weight: bold;
+        }
+        
+        .cost-column {
+            text-align: right;
+        }
+        
+        .number-column {
+            text-align: center;
+        }
+        
+        .table-caption {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        } */
   </style>
 </head>
 
@@ -81,11 +131,55 @@
       <p></p>
 
       <p> <a href="https://openprescribing.net/"> OpenPrescribing </a> </p>
-      <p>Further examination of the downloaded prescribing data for Temazepam, as demonstrated in the following figure (Figure 1)
-        <!-- , uncovered a positive association between the number of prescribed items and the total quantity, while spending showed an inverse relationship with both during the period from September 2020 to October 2022.</p> -->
-      <p>In sensitivity analyses restricted to Z-drugs, the South West consistently exhibited the highest prescribing rate, whereas London continued to have the lowest across the period 2020–2025 (Figure 2).</p>
-       </div>
+      <p>Further examination of the downloaded prescribing data for Temazepam is presented below (Table, Figure 1):
+      Between September 2020 and May 2022, prescription items (mean: 60k, SD: 4.1k), quantity (1,571k, SD:119k), and spending (£145k, SD:20k) across England showed a gradual decline. Beginning in June 2022, items and quantity dropped sharply, reaching their lowest levels in December 2022 (items:16k; quantity:463k). 
+       They then increased and remained relatively stable until August 2025, with average values of 27k items and 721k quantity for the period January 2023 to August 2025.
+       Spending, however, followed a different pattern. Starting in June 2022, it rose dramatically to a peak of £1,112k in September, before declining through December. It then fluctuated briefly before stabilising from March 2023 until August 2025.
+       The period from June 2022 to September 2023 is particularly notable: while prescribing items and quantity fell sharply, spending increased significantly - an interesting divergence in trends.</p>
 
+      </div>
+
+<div class="table-caption">Summary of Temazepam Prescribing Data Across England (2020 - 2025) </div>
+             <p> </p>
+
+        <table border="1" style="border-collapse: collapse; width: auto; text-align: center; font-family: Arial, sans-serif;">
+  <tr>
+        <th style="vertical-align: middle; white-space: nowrap; width: 200px; height: 32px;">
+            <div style="display: flex; justify-content: center; align-items: center; gap: 6px; font-size: 0.9em;">
+                <span>Period</span>
+                <span style="color: #999;">|</span>
+                <span>Mean (SD) </span>
+            </div>
+        </th>
+        <th style="vertical-align: middle; width: 150px; font-size: 0.9em; height: 32px;">Items</th>
+        <th style="vertical-align: middle; width: 170px; font-size: 0.9em; height: 32px;">Quantity</th>
+        <th style="vertical-align: middle; width: 160px; font-size: 0.9em; height: 32px;">Cost (£)</th>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; font-size: 0.85em; height: 30px;">Sept 2020 - May 2022</td>
+        <td style="vertical-align: middle; font-size: 0.85em;">60,000 (4,100)</td>
+        <td style="vertical-align: middle; font-size: 0.85em;">1571,000 (119,000)</td>
+        <td style="vertical-align: middle; font-size: 0.85em;">145,000 (20,000)</td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; font-size: 0.85em; height: 30px;">Jun 2022 - Feb 2023</td>
+        <td style="vertical-align: middle; font-size: 0.85em; ">37,000 (14,000)</td>
+        <td style="vertical-align: middle; font-size: 0.85em;">980,000 (351,000)</td>
+        <td style="vertical-align: middle; font-size: 0.85em;">678,000 (260,000)</td>
+    </tr>
+    <tr>
+        <td style="vertical-align: middle; font-size: 0.85em; height: 30px;">Mar 2023 - Aug 2025</td>
+        <td style="vertical-align: middle; font-size: 0.85em;">27,000 (1,400)</td>
+        <td style="vertical-align: middle; font-size: 0.85em;">721,000 (47,600)</td>
+        <td style="vertical-align: middle; font-size: 0.85em;">601,000 (31,200)</td>
+    </tr>
+        </table>
+  
+<div>
+       <p>In sensitivity analyses restricted to Z-drugs, the South West consistently exhibited the highest prescribing rate, whereas London continued to have the lowest across the period 2020–2025 (Figure 2).</p>
+       
+      </div>
+    
       <div class="col-md-6">
         <p class="mt-0"> <b>Figures</b></p>
         <img src="/assets/img/Temazepam_items_quantity_actual cost_all.png" alt="Figure1" class="responsive-img">
@@ -111,7 +205,7 @@
   <p>  </p>
   <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <p><u><a class="me-3 py-2 text-decoration-none" href="/posts"> Previous Post </a> </u></p>  </nav>
 
-  </div>
+ </div>
   
 </div>
 
