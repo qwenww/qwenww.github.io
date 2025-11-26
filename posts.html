@@ -78,11 +78,11 @@
       <p><i>~I am curious about prescribing data. </i> </p>
       <p> </p>
       <p> </p>
-      <p> <b>A First- Glance at NHS GP Prescribing of Sleep Medications: Z drugs and Benzodiazepines (2020–2025) Using OpenPrescribing</b></p>
+      <p> <b>A First Glance at NHS GP Prescribing of Sleep Medications: Z-Drugs (2020–2025) Using OpenPrescribing</b></p>
       <p class="small-text" style="text-align:justify;"> (First Published Online 10 November 2025)</p>
       <p> I have worked on a range of data-driven projects for some time, OpenPrescribing was entirely new to me.  Curious about who it was built for, how it works, and whether I could find something interesting or inspiring,  I decided to dive in and give it a try. From time to time, I explored OpenPrescribing, mostly to become familiar with its features. I found it to be an excellent example of how simplicity and power can coexist in a well-designed tool, and I was impressed by its clean, intuitive interface and surprisingly strong analytical capabilities.</p>
-      <p>I took a closer look recently at OpenPrescribing after coming across a topic that drew my interest - sleep medications. Although sleeping pills are prescribed to aim sleep and support health, research suggests that deprescribing unnecessary sleep drugs can improve well-being and benefit in older adults [1], as these medications are linked to cognitive decline and increased injury risk [2-5] . Interested in prescribing patterns and potential regional differences, I looked into GP prescriptions in England (2020 - 2025) for Z-drugs (Zopiclone, Zolpidem) and hypnotic benzodiazepines (Nitrazepam, Loprazolam, Lormetazepam, Temazepam) for the short term treatment of insomnia, using the OpenPrescribing platform.</p>
-      <p>Here’s what I did: In <a href="https://openprescribing.net/"> OpenPrescribing </a>, click “Start analysing” to launch the “Analyse” interface. Enter the drug names and select lists containing all available formulations (tablets, capsules, liquids, and suspensions) across all doses. Then choose “versus – total list size,” highlight “NHS England Region” and click “Show me the data” to generate figures and a downloadable CSV data file. Following this process, I obtained Figure 1 (line chart), which shows the prescribing trend for Z-drugs and benzodiazepines by region from 2020 to 2025. Figure 2 (map) and Figure 3 (bar chart) present snapshots of prescribing rates across regions in September 2020 and August 2025. </p>
+      <p>I took a closer look recently at OpenPrescribing after coming across a topic that drew my interest - sleep medications. Although sleeping pills are prescribed to aim sleep and support health, research suggests that deprescribing unnecessary sleep drugs can improve well-being and benefit in older adults [1], as these medications are linked to cognitive decline and increased injury risk [2-5] . Interested in prescribing patterns and potential regional differences, I looked into GP prescriptions in England (2020 - 2025) for Z-drugs (Zopiclone, Zolpidem), commonly used for the short-term treatment of insomnia, using the OpenPrescribing platform.</p>
+      <p>Here’s what I did: In <a href="https://openprescribing.net/"> OpenPrescribing </a>, click “Start analysing” to launch the “Analyse” interface. Enter the drug names and select lists containing all available formulations (tablets, capsules, liquids, and suspensions) across all doses. Then choose “versus – total list size,” highlight “NHS England Region” and click “Show me the data” to generate figures and a downloadable CSV data file. Following this process, I obtained Figure 1 (line chart), which shows the prescribing trend for Z-drugs by region from 2020 to 2025. Figure 2 (map) and Figure 3 (bar chart) present snapshots of prescribing rates across regions in September 2020 and August 2025. </p>
       <p>My preliminary observations revealed three key findings:</p>
       <p> Despite periodic ups and downs in prescribing rates across regions, overall prescribing declined gradually, showing a consistent and marked downward trend from 2020 to 2025. A recurrent bimodal seasonal pattern is also evident, characterised by an initial peak in December, a drop in January, and a subsequent rise to a higher peak in March. Finally, there is substantial and persistent regional variation in the prescribing rate, with the South West's average monthly rate (10 items per 1,000 patients) consistently being about double that of London (5 per 1,000) over the 2021–2025 period. </p> 
       <p>These visual findings also raise several further questions:</p>
@@ -91,41 +91,41 @@
       <li> What explains the recurring seasonal peaks in December and March, across all regions? Are these seasonal trends driven more by healthcare system practices or actual fluctuations in patient demand?</li>
       <li>Why do prescribing rates vary regionally, with the South West being the highest and London the lowest? Geographically, the South West is generally more rural than London. Urban areas like London often involve demanding lifestyles (commuting, noise, and fast-paced living), yet stress alone may not necessarily lead to higher prescribing rates. It remains unclear how, and to what extent, regional demographics, healthcare access, socioeconomic factors, or other unmeasured variables influence these differences.</li>
       </ul>
+      <p>Sensitivity analyses (2020–2025): When melatonin (a hormone used to treat short-term sleep problems in adults aged 55+) was added to Z-drugs, London remained the lowest, while the South West remained the highest (Figure 2).
+        Including melatonin alongside both Z-drugs and hypnotic benzodiazepines (Nitrazepam, Loprazolam, Lormetazepam, Temazepam), London again had the lowest prescribing rate, whereas the East of England and South West were at the top, with the East of England showing slightly higher prescribing rates (Figure 3).</p>
+        
       <p>It is worth noting that the observations so far have focused solely on prescriptions in relation to total list size across regions. The prescribing data can also be examined at other levels - such as by practice, Sub-ICB location, PCN, ICB, or by focusing on specific drugs or BNF sections for more detailed comparisons. The downloadable file enables more extensive and independent offline analysis.</p>
-      <p>To gain more details on these sleep medications, I also explored “Trend for BNF sections”, in chapter 4 (Central Nervous System), under 4.1 <i>Hypnotics and anxiolytics</i>, examining each drug individually, their prescribing items, and their spending across all practices in England. 
-       I noticed something striking for Temazepam (a benzodiazepine licenced in the UK for short term use in severe insomnia in adults), as prescription volume does not align well with spending, with some time periods showing the two trends moving in opposite directions (Figure 4). 
-      The contrasting pattern suggests that spending is not directly driven by the number of prescriptions (items), but more likely by differences in the quantity prescribed and changes in the actual cost of Temazepam over time. It also implies that periods with fewer prescriptions may have involved larger quantities per prescription or higher-cost formulations. Further investigation is needed to better understand these dynamics and uncover the story behind the trends. </p>
-      <p class="mb-2">Like walking along the beach in search of hidden treasure, I began my first real exploration of the prescribing data with no expectations. The experience proved to be exciting, revealing intriguing findings and questions worth pursuing - whether to inspire future research or to understand the reasons behind them. 
+      
+      <p>To gain more details on these sleep medications, I also explored “Trend for BNF sections”, in chapter 4 (Central Nervous System), under 4.1 <i>Hypnotics and anxiolytics</i>, examining each drug individually, their prescribing items across all practices in England (Figure 4). 
+     
+       <p class="mb-2">Like walking along the beach in search of hidden treasure, I began my first real exploration of the prescribing data with no expectations. The experience proved to be exciting, revealing intriguing findings and questions worth pursuing - whether to inspire future research or to understand the reasons behind them. 
        It was an engaging and rewarding journey of discovery, made possible by OpenPrescribing - an open, rapid and highly valuable platform that unlocks insights into prescribing practices, facilitates the identification of trends, variations, and regional differences, and highlights potential areas for intervention to enhance healthcare delivery.</p>
       <p></p>
-      <p><b>References</b></p>
-      <p class="small-text"> 1. Heun-Johnson H, Thunell J, Cloughesy JN, et al. Lifetime burden of prescription medication for insomnia in middle-aged and older adults in the US: a microsimulation study. Lancet Reg Health - Am. 2025;52:101284. doi:10.1016/j.lana.2025.101284 </p>
-      <p class="small-text"> 2. Ensrud KE. Central Nervous System Active Medications and Risk for Fractures in Older Women. Arch Intern Med. 2003;163(8):949. doi:10.1001/archinte.163.8.949 </p>
-      <p class="small-text"> 3. Billioti De Gage S, Moride Y, Ducruet T, et al. Benzodiazepine use and risk of Alzheimer’s disease: case-control study. BMJ. 2014;349(sep09 2):g5205-g5205. doi:10.1136/bmj.g5205 </p>
-      <p class="small-text"> 4. Wu JQ, Appleman ER, Salazar RD, Ong JC. Cognitive Behavioral Therapy for Insomnia Comorbid With Psychiatric and Medical Conditions: A Meta-analysis. JAMA Intern Med. 2015;175(9):1461 doi:10.1001/jamainternmed.2015.3006 </p>
-      <p class="small-text">5. Patel D, Steinberg J, Patel P. Insomnia in the Elderly: A Review. J Clin Sleep Med.2018;14(06):1017-1024.doi:10.5664/jcsm.71723 </p>
-      <p class="small-text mb-0"> 6. NICE. Temazepam | Drugs | BNF content published by NICE. <a href= https://bnf.nice.org.uk/drugs/temazepam/> https://bnf.nice.org.uk/drugs/temazepam </a></p> </div>
 
-      <div class="col-md-6">
-        <p class="mt-0"> <b>Figures</b></p>
-        <img src="/assets/img/Z_Benzo_drugs_rmv2_time_series.png" alt="Figure1" class="responsive-img">
-        <p class="small-text">Figure 1: Prescribing items for Z-drugs and benzodiazepines vs patients on list by region: five-year time series from September 2020 to projected August 2025 </p>
-      </div>
-      <div class="col-md-6">
-        <img src="/assets/img/Z_Benzo_drugs_rmv2_map_2020_2025.png" alt="Figure2" class="responsive-img">
-        <p class="small-text">Figure 2: Prescribing rates for Z-drugs and benzodiazepines across regions in September 2020 and August 2025 </p>
-      </div>
-      <div class="col-md-6">
-        <img src="/assets/img/Z_Benzo_drugs_rmv2_region_2020_2025.png" alt="Figure3" class="responsive-img">
-        <p class="small-text">Figure 3: Prescribing rates for Z-drugs and benzodiazepines across regions in September 2020 and August 2025 </p>
-      </div>
-      <div class="col-md-6">
-        <img src="/assets/img/temazepam_spending_items.png" alt="Figure4" class="responsive-img">
-        <p class="small-text">Figure 4: Trends in prescribing items and spending for Temazepam across all practices in England (2020-2025) </p>
+      <div class="col-md-6 d-flex flex-column align-items-center"> 
+                <p class="mt-0"> <b>Figures</b></p>
+           <img src="/assets/img/Z_drugs_time_series.png" alt="Figure1" class="responsive-img">
+        <p class="small-text text-center">Figure 1 : Prescribing rates for Z-drugs across regions in England (2020 - 2025) </p>
+      </div> 
 
-        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a class="me-3 py-2 text-decoration-none" href="posts2.html"> Next Post </a> </nav>
-
+     <div class="col-md-6 d-flex flex-column align-items-center"> 
+           <img src="/assets/img/Z_drugs_Melatonin_94.png" alt="Figure2" class="responsive-img">
+         <p class="small-text text-center">Figure 2 : Prescribing rates for Z-drugs + Melatonin across regions in England (2020 - 2025) </p>
       </div>
+
+      <div class="col-md-6 d-flex flex-column align-items-center"> 
+           <img src="/assets/img/Z_drugs_Benzo_Melatonin_117a.png" alt="Figure3" class="responsive-img">
+         <p class="small-text text-center">Figure 3 : Prescribing rates for Z-drugs + Benzodiazepines + Melatonin across regions in England (2020 - 2025) </p>
+      </div>  
+      
+      <div class="col-md-6 d-flex flex-column align-items-center"> 
+           <img src="/assets/img/Zopiclone_Zolpidem_2020_2025.png" alt="Figure4" class="responsive-img">
+         <p class="small-text text-center">Figure 4: Total prescribing items for Z-drugs cross all practices in England (2020 - 2025) </p>
+      </div>
+
+      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a class="me-3 py-2 text-decoration-none" href="posts2.html"> Next Post </a> </nav>
+
+    
     </div>
 
     <!-- Modal -->
