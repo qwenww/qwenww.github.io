@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>Posts | Qing Wen</title>
-  <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
-  <script defer src="/assets/libs/fontawesome/all.min.js"></script>
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
-  <link rel="shortcut icon" href="/assets/favicon.ico">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <style>
-    .small-text {
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+   <title>Posts | Qing Wen</title>
+   <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
+   <script defer src="/assets/libs/fontawesome/all.min.js"></script>
+   <link rel="stylesheet" href="/assets/css/main.css">
+   <link rel="apple-touch-icon" sizes="152x152" href="/assets/apple-icon-152x152.png">
+   <link rel="shortcut icon" href="/assets/favicon.ico">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+     .small-text {
       font-size: 0.80rem; 
       color: #555; 
-    }
-    img.responsive-img {
+     }
+     img.responsive-img {
       max-width: 100%;
       height: auto;
       cursor: zoom-in;
       transition: 0.3s;
-    }
-    img.responsive-img:hover {
+     }
+     img.responsive-img:hover {
       opacity: 0.8;
-    }
-    /* Modal styles */
-    #imgModal {
+     }
+     /* Modal styles */
+     #imgModal {
       display: none;
       position: fixed;
       z-index: 1000;
@@ -36,15 +36,15 @@
       height: 100%;
       overflow: auto;
       background-color: rgba(0,0,0,0.9);
-    }
-    #imgModal img {
+     }
+     #imgModal img {
       margin: auto;
       display: block;
       max-width: 90%;
       max-height: 90%;
       margin-top: 5%;
-    }
-    #closeModal {
+     }
+     #closeModal {
       position: absolute;
       top: 20px;
       right: 35px;
@@ -52,120 +52,129 @@
       font-size: 40px;
       font-weight: bold;
       cursor: pointer;
-    }
-  </style>
-</head>
+     }
+   </style>
+  </head>
 
-<body>
-  <div class="col-lg-8 mx-auto p-3 py-md-5">
-    <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
-      <div>
-        <a href="/" class="d-flex align-items-center text-decoration-none">
+ <body>
+   <div class="col-lg-8 mx-auto p-3 py-md-5">
+     <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
+        <div>
+          <a href="/" class="d-flex align-items-center text-decoration-none">
           <span class="fs-4 fw-bold">Qing Wen</span>
-        </a>
-      </div>
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-decoration-none" href="/">home</a>
-        <a class="me-3 py-2 text-decoration-none" href="/publications">publications</a>
-        <a class="me-3 py-2 text-decoration-none" href="/posts">posts</a>
-        <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
-        <a class="me-3 py-2 text-decoration-none" href="/contact">contact</a>
-      </nav>
-    </header>
+          </a>
+       </div>
+       <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+         <a class="me-3 py-2 text-decoration-none" href="/">home</a>
+         <a class="me-3 py-2 text-decoration-none" href="/publications">publications</a>
+         <a class="me-3 py-2 text-decoration-none" href="/posts">posts</a>
+         <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
+         <a class="me-3 py-2 text-decoration-none" href="/contact">contact</a>
+       </nav>
+     </header>
 
-    <div class="row g-5 mb-5">
-      <div class="col-md-12">
-      <p><i>~I am curious about prescribing data. </i> </p>
-      <p> </p>
-      <p> </p>
-      <p> <b>A First Glance at NHS GP Prescribing of Sleep Medications: Z-Drugs (2020–2025) Using OpenPrescribing</b></p>
-      <p class="small-text" style="text-align:justify;"> (First Published Online 10 November 2025)</p>
-      <p> I have worked on a range of data-driven projects for some time, OpenPrescribing was entirely new to me.  Curious about who it was built for, how it works, and whether I could find something interesting or inspiring,  I decided to dive in and give it a try. From time to time, I explored OpenPrescribing, mostly to become familiar with its features. I found it to be an excellent example of how simplicity and power can coexist in a well-designed tool, and I was impressed by its clean, intuitive interface and surprisingly strong analytical capabilities.</p>
-      <p>I took a closer look recently at OpenPrescribing after coming across a topic that drew my interest - sleep medications. Although sleeping pills are prescribed to aim sleep and support health, research suggests that deprescribing unnecessary sleep drugs can improve well-being and benefit in older adults [1], as these medications are linked to cognitive decline and increased injury risk [2-5] . Interested in prescribing patterns and potential regional differences, I looked into GP prescriptions in England (2020 - 2025) for Z-drugs (Zopiclone, Zolpidem), commonly used for the short-term treatment of insomnia, using the OpenPrescribing platform.</p>
-      <p>Here’s what I did: In <a href="https://openprescribing.net/"> OpenPrescribing </a>, click “Start analysing” to launch the “Analyse” interface. Enter the drug names and select lists containing all available formulations (tablets, capsules, liquids, and suspensions) across all doses. Then choose “versus – total list size,” highlight “NHS England Region” and click “Show me the data” to generate figures and a downloadable CSV data file. Following this process, I obtained Figure 1 (line chart), which shows the prescribing trend for Z-drugs by region from 2020 to 2025. Figure 2 (map) and Figure 3 (bar chart) present snapshots of prescribing rates across regions in September 2020 and August 2025. </p>
-      <p>My preliminary observations revealed three key findings:</p>
-      <p> Despite periodic ups and downs in prescribing rates across regions, overall prescribing declined gradually, showing a consistent and marked downward trend from 2020 to 2025. A recurrent bimodal seasonal pattern is also evident, characterised by an initial peak in December, a drop in January, and a subsequent rise to a higher peak in March. Finally, there is substantial and persistent regional variation in the prescribing rate, with the South West's average monthly rate (10 items per 1,000 patients) consistently being about double that of London (5 per 1,000) over the 2021–2025 period. </p> 
-      <p>These visual findings also raise several further questions:</p>
-      <ul>
-      <li> What factors are driving the overall decline in prescriptions across England? Are policy changes, clinical guidelines, or public awareness campaigns contributing to this decline? </li>
-      <li> What explains the recurring seasonal peaks in December and March, across all regions? Are these seasonal trends driven more by healthcare system practices or actual fluctuations in patient demand?</li>
-      <li>Why do prescribing rates vary regionally, with the South West being the highest and London the lowest? Geographically, the South West is generally more rural than London. Urban areas like London often involve demanding lifestyles (commuting, noise, and fast-paced living), yet stress alone may not necessarily lead to higher prescribing rates. It remains unclear how, and to what extent, regional demographics, healthcare access, socioeconomic factors, or other unmeasured variables influence these differences.</li>
-      </ul>
-      <p>Sensitivity analyses (2020–2025): When melatonin (a hormone used to treat short-term sleep problems in adults aged 55+) was added to Z-drugs, London remained the lowest, while the South West remained the highest (Figure 2).
-        Including melatonin alongside both Z-drugs and hypnotic benzodiazepines (Nitrazepam, Loprazolam, Lormetazepam, Temazepam), London again had the lowest prescribing rate, whereas the East of England and South West were at the top, with the East of England showing slightly higher prescribing rates (Figure 3).</p>
+     <div class="row g-5 mb-5">
+        <div class="col-md-12">
+           <p><i>~I am curious about prescribing data. </i> </p>
+           <p> </p>
+           <p> </p>
+           <p> <b>A First Glance at NHS GP Prescribing of Sleep Medications: Z-Drugs (2020–2025) Using OpenPrescribing</b></p>
+           <p class="small-text" style="text-align:justify;"> (First Published Online 10 November 2025)</p>
+           <p> I have worked on a range of data-driven projects for some time, OpenPrescribing was entirely new to me.  Curious about who it was built for, how it works, and whether I could find something interesting or inspiring,  I decided to dive in and give it a try. From time to time, I explored OpenPrescribing, mostly to become familiar with its features. I found it to be an excellent example of how simplicity and power can coexist in a well-designed tool, and I was impressed by its clean, intuitive interface and surprisingly strong analytical capabilities.</p>
+           <p>I took a closer look recently at OpenPrescribing after coming across a topic that drew my interest - sleep medications. Although sleeping pills are prescribed to aim sleep and support health, research suggests that deprescribing unnecessary sleep drugs can improve well-being and benefit in older adults [1], as these medications are linked to cognitive decline and increased injury risk [2-5] . Interested in prescribing patterns and potential regional differences, I looked into GP prescriptions in England (2020 - 2025) for Z-drugs (Zopiclone, Zolpidem), commonly used for the short-term treatment of insomnia, using the OpenPrescribing platform.</p>
+           <p>Here’s what I did: In <a href="https://openprescribing.net/"> OpenPrescribing </a>, click “Start analysing” to launch the “Analyse” interface. Enter the drug names and select lists containing all available formulations (tablets, capsules, liquids, and suspensions) across all doses. Then choose “versus – total list size,” highlight “NHS England Region” and click “Show me the data” to generate figures and a downloadable CSV data file. Following this process, I obtained Figure 1 (line chart), which shows the prescribing trend for Z-drugs by region from 2020 to 2025. Figure 2 (map) and Figure 3 (bar chart) present snapshots of prescribing rates across regions in September 2020 and August 2025. </p>
+           <p>My preliminary observations revealed three key findings:</p>
+           <p> Despite periodic ups and downs in prescribing rates across regions, overall prescribing declined gradually, showing a consistent and marked downward trend from 2020 to 2025. A recurrent bimodal seasonal pattern is also evident, characterised by an initial peak in December, a drop in January, and a subsequent rise to a higher peak in March. Finally, there is substantial and persistent regional variation in the prescribing rate, with the South West's average monthly rate (8.5 items per 1,000 patients) consistently being about 1.8 times that of London (4.8 per 1,000) over the 2021–2025 period. </p> 
+           <p>These visual findings also raise several further questions:</p>
         
-      <p>It is worth noting that the observations so far have focused solely on prescriptions in relation to total list size across regions. The prescribing data can also be examined at other levels - such as by practice, Sub-ICB location, PCN, ICB, or by focusing on specific drugs or BNF sections for more detailed comparisons. The downloadable file enables more extensive and independent offline analysis.</p>
+           <ul>
+           <li> What factors are driving the overall decline in prescriptions across England? Are policy changes, clinical guidelines, or public awareness campaigns contributing to this decline? </li>
+            <li> What explains the recurring seasonal peaks in December and March, across all regions? Are these seasonal trends driven more by healthcare system practices or actual fluctuations in patient demand?</li>
+            <li>Why do prescribing rates vary regionally, with the South West being the highest and London the lowest? Geographically, the South West is generally more rural than London. Urban areas like London often involve demanding lifestyles (commuting, noise, and fast-paced living), yet stress alone may not necessarily lead to higher prescribing rates. It remains unclear how, and to what extent, regional demographics, healthcare access, socioeconomic factors, or other unmeasured variables influence these differences.</li>
+           </ul>
+            <p>Sensitivity analyses (2020–2025): When melatonin (a hormone used to treat short-term sleep problems in adults aged 55+) was added to Z-drugs, London remained the lowest, while the South West remained the highest (Figure 2).
+            When melatonin was included alongside both Z-drugs and hypnotic benzodiazepines (Nitrazepam, Loprazolam, Lormetazepam, Temazepam), London again had the lowest prescribing rate, whereas the East of England and South West were at the top, with the East of England showing slightly higher prescribing rates (Figure 3).</p>
+        
+            <p>It is worth noting that the observations so far have focused solely on prescriptions in relation to total list size across regions. The prescribing data can also be examined at other levels - such as by practice, Sub-ICB location, PCN, ICB, or by focusing on specific drugs or BNF sections for more detailed comparisons. The downloadable file enables more extensive and independent offline analysis.</p>
       
-      <p>To gain more details on these sleep medications, I also explored “Trend for BNF sections”, in chapter 4 (Central Nervous System), under 4.1 <i>Hypnotics and anxiolytics</i>, examining each drug individually, their prescribing items across all practices in England (Figure 4). 
+            <p>To gain more details on these sleep medications, I also explored “Trend for BNF sections”, in chapter 4 (Central Nervous System), under 4.1 <i>Hypnotics and anxiolytics</i>, examining each drug individually, their prescribing items and spending across all practices in England. Zopiclone had substantially higher prescribing activity and costs compared with Zolpidem (Figure 4).
      
-       <p class="mb-2">Like walking along the beach in search of hidden treasure, I began my first real exploration of the prescribing data with no expectations. The experience proved to be exciting, revealing intriguing findings and questions worth pursuing - whether to inspire future research or to understand the reasons behind them. 
-       It was an engaging and rewarding journey of discovery, made possible by OpenPrescribing - an open, rapid and highly valuable platform that unlocks insights into prescribing practices, facilitates the identification of trends, variations, and regional differences, and highlights potential areas for intervention to enhance healthcare delivery.</p>
-      <p></p>
-
-      <div class="col-md-6 d-flex flex-column align-items-center"> 
-                <p class="mt-0"> <b>Figures</b></p>
-           <img src="/assets/img/Z_drugs_time_series.png" alt="Figure1" class="responsive-img">
-        <p class="small-text text-center">Figure 1 : Prescribing rates for Z-drugs across regions in England (2020 - 2025) </p>
-      </div> 
-
-     <div class="col-md-6 d-flex flex-column align-items-center"> 
-           <img src="/assets/img/Z_drugs_Melatonin_94.png" alt="Figure2" class="responsive-img">
-         <p class="small-text text-center">Figure 2 : Prescribing rates for Z-drugs + Melatonin across regions in England (2020 - 2025) </p>
-      </div>
-
-      <div class="col-md-6 d-flex flex-column align-items-center"> 
-           <img src="/assets/img/Z_drugs_Benzo_Melatonin_117a.png" alt="Figure3" class="responsive-img">
-         <p class="small-text text-center">Figure 3 : Prescribing rates for Z-drugs + Benzodiazepines + Melatonin across regions in England (2020 - 2025) </p>
-      </div>  
+           <p class="mb-2">Like walking along the beach in search of hidden treasure, I began my first real exploration of the prescribing data with no expectations. The experience proved to be exciting, revealing intriguing findings and questions worth pursuing - whether to inspire future research or to understand the reasons behind them. 
+            It was an engaging and rewarding journey of discovery, made possible by OpenPrescribing - an open, rapid and highly valuable platform that unlocks insights into prescribing practices, facilitates the identification of trends, variations, and regional differences, and highlights potential areas for intervention to enhance healthcare delivery.</p>
+           <p></p>
+         <div class="row">
+           <div class="col-md-6 d-flex flex-column align-items-center"> 
+                 <p class="mt-0"> <b>Figures</b></p>
+                 <img src="/assets/img/Z_drugs_time_series.png" alt="Figure1" class="responsive-img">
+                 <p class="small-text text-center">Figure 1 : Prescribing rates for Z-drugs across regions in England (2020 - 2025) </p>
+           </div> 
+          
+            <div class="col-md-6 d-flex flex-column align-items-center"> 
+              <img src="/assets/img/Z_drugs_Melatonin_94.png" alt="Figure2" class="responsive-img">
+              <p class="small-text text-center">Figure 2 : Prescribing rates for Z-drugs + Melatonin across regions in England (2020 - 2025) </p>
+           </div>
+         </div>
+          <div class="row mt-4">
+             <div class="col-md-6 d-flex flex-column align-items-center"> 
+               <img src="/assets/img/Z_drugs_Benzo_Melatonin_117a.png" alt="Figure3" class="responsive-img">
+               <p class="small-text text-center">Figure 3 : Prescribing rates for Z-drugs + Benzodiazepines + Melatonin across regions in England (2020 - 2025) </p>
+             </div>  
       
-      <div class="col-md-6 d-flex flex-column align-items-center"> 
-           <img src="/assets/img/Zopiclone_Zolpidem_2020_2025.png" alt="Figure4" class="responsive-img">
-         <p class="small-text text-center">Figure 4: Total prescribing items for Z-drugs cross all practices in England (2020 - 2025) </p>
+           <div class="col-md-6 d-flex flex-column align-items-center"> 
+             <img src="/assets/img/items_Zopiclone_Zolpidem_2020_2025.png" alt="Figure4" class="responsive-img">
+             <p class="small-text text-center">Figure 4: Total prescribing items for Z-drugs cross all practices in England (2020 - 2025) </p>
+            </div>
+         </div>
+           <div class="col-md-6 d-flex flex-column align-items-center"> 
+             <img src="/assets/img/spending_Zopiclone_Zolpidem_2020_2025.png" alt="Figure5" class="responsive-img">
+             <p class="small-text text-center">Figure 5: Total spending for Z-drugs cross all practices in England (2020 - 2025) </p>
+            </div>
+
+         </div>
+             <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a class="me-3 py-2 text-decoration-none" href="posts2.html"> Next Post </a> </nav>
+
+
+
+             <!-- Modal -->
+             <div id="imgModal">
+                <span id="closeModal">&times;</span>
+                <img id="modalImg">
+             </div>
+
+           <footer class="pt-5 my-5 text-muted border-top">
+              <div class="row">
+                <div class="col-md-6 text-end social-media-icons">
+                 <a href="https://github.com/qwenww" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
+                 <a href="https://twitter.com/QQwenww" class="ms-3 fs-5"><i class="fab fa-twitter"></i></a>
+                 <a href="https://uk.linkedin.com/in/qing-wen-ba26a7120" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+           </footer>
       </div>
 
-      <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a class="me-3 py-2 text-decoration-none" href="posts2.html"> Next Post </a> </nav>
+        <script>
+            const modal = document.getElementById("imgModal");
+            const modalImg = document.getElementById("modalImg");
+            const closeModal = document.getElementById("closeModal");
 
-    
-    </div>
+            document.querySelectorAll('img.responsive-img').forEach(img => {
+            img.addEventListener('click', () => {
+            modal.style.display = "block";
+            modalImg.src = img.src;
+              });
+            });
 
-    <!-- Modal -->
-    <div id="imgModal">
-      <span id="closeModal">&times;</span>
-      <img id="modalImg">
-    </div>
+           closeModal.addEventListener('click', () => {
+            modal.style.display = "none";
+           });
 
-    <footer class="pt-5 my-5 text-muted border-top">
-      <div class="row">
-        <div class="col-md-6 text-end social-media-icons">
-          <a href="https://github.com/qwenww" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/QQwenww" class="ms-3 fs-5"><i class="fab fa-twitter"></i></a>
-          <a href="https://uk.linkedin.com/in/qing-wen-ba26a7120" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-    </footer>
-  </div>
+             modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+             modal.style.display = "none";
+            }
+            });
+          </script>
 
-  <script>
-    const modal = document.getElementById("imgModal");
-    const modalImg = document.getElementById("modalImg");
-    const closeModal = document.getElementById("closeModal");
+  </body>
 
-    document.querySelectorAll('img.responsive-img').forEach(img => {
-      img.addEventListener('click', () => {
-        modal.style.display = "block";
-        modalImg.src = img.src;
-      });
-    });
-
-    closeModal.addEventListener('click', () => {
-      modal.style.display = "none";
-    });
-
-    modal.addEventListener('click', (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-  </script>
-</body>
 </html>
